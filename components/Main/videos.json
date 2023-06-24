@@ -1,13 +1,13 @@
-{
-    "Título do Arquivo 1": {
+[
+    {
       "title": "Título do Arquivo 1",
-      "link": "https://exemplo.com/arquivo1",
+      "link": "https://www.youtube.com/watch?v=kvZxxVLApxw",
       "description": "Descrição do Arquivo 1",
       "spreadsheet": "https://exemplo.com/arquivo1_planilha",
       "document": "https://exemplo.com/arquivo1_documento",
       "presentation": "https://exemplo.com/arquivo1_apresentacao"
     },
-    "Título do Arquivo 2": {
+    {
       "title": "Título do Arquivo 2",
       "link": "https://exemplo.com/arquivo2",
       "description": "Descrição do Arquivo 2",
@@ -15,7 +15,7 @@
       "document": "https://exemplo.com/arquivo2_documento",
       "presentation": "https://exemplo.com/arquivo2_apresentacao"
     },
-    "Título do Arquivo 3": {
+    {
       "title": "Título do Arquivo 3",
       "link": "https://exemplo.com/arquivo3",
       "description": "Descrição do Arquivo 3",
@@ -23,28 +23,29 @@
       "document": "https://exemplo.com/arquivo3_documento",
       "presentation": "https://exemplo.com/arquivo3_apresentacao"
     },
-    "Título do Arquivo 4": {
-      "title": "Título do Arquivo 4",
-      "link": "https://exemplo.com/arquivo4",
-      "description": "Descrição do Arquivo 4",
-      "spreadsheet": "https://exemplo.com/arquivo4_planilha",
-      "document": "https://exemplo.com/arquivo4_documento",
-      "presentation": "https://exemplo.com/arquivo4_apresentacao"
-    },
-    "Título do Arquivo 5": {
-      "title": "Título do Arquivo 5",
-      "link": "https://exemplo.com/arquivo5",
-      "description": "Descrição do Arquivo 5",
-      "spreadsheet": "https://exemplo.com/arquivo5_planilha",
-      "document": "https://exemplo.com/arquivo5_documento",
-      "presentation": "https://exemplo.com/arquivo5_apresentacao"
-    },
-    "Título do Arquivo 6": {
-      "title": "Título do Arquivo 6",
-      "link": "https://exemplo.com/arquivo6",
-      "description": "Descrição do Arquivo 6",
-      "spreadsheet": "https://exemplo.com/arquivo6_planilha",
-      "document": "https://exemplo.com/arquivo6_documento",
-      "presentation": "https://exemplo.com/arquivo6_apresentacao"
-    }
-  }
+    {
+        "title": "Título do Arquivo 4",
+        "link": "https://exemplo.com/arquivo4",
+        "description": "Descrição do Arquivo 4",
+        "spreadsheet": "https://exemplo.com/arquivo4_planilha",
+        "document": "https://exemplo.com/arquivo4_documento",
+        "presentation": "https://exemplo.com/arquivo4_apresentacao"
+      },
+      {
+        "title": "Título do Arquivo 5",
+        "link": "https://exemplo.com/arquivo5",
+        "description": "Descrição do Arquivo 5",
+        "spreadsheet": "https://exemplo.com/arquivo5_planilha",
+        "document": "https://exemplo.com/arquivo5_documento",
+        "presentation": "https://exemplo.com/arquivo5_apresentacao"
+      },
+      {
+        "title": "Título do Arquivo 6",
+        "link": "<iframe src=\"https://www.youtube.com/embed/kvZxxVLApxw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet, nibh vitae bibendum facilisis, ligula quam facilisis mauris, at mollis felis odio sit amet tortor.",
+        "spreadsheet": "https://exemplo.com/arquivo6_planilha",
+        "document": "https://exemplo.com/arquivo6_documento",
+        "presentation": "https://exemplo.com/arquivo6_apresentacao"
+      }
+
+]

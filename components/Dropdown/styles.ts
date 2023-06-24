@@ -45,7 +45,7 @@ export const ContainerOrder = styled.div`
 `;
 
 export const TextOrder = styled.h3`
-  font-size: 0.9rem;
+  font-size: 1rem;
 `;
 
 export const ContentDatePublication = styled.div`
@@ -57,14 +57,15 @@ export const ContentDatePublication = styled.div`
 `;
 
 export const TextDate = styled.h3`
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: bold;
 `;
 
 export const Line = styled.div`
   height: 2px;
   width: 60vw;
-  margin: 15px 0;
+  margin-top: 30px;
+  box-sizing: border-box;
   background-color: var(--third-color);
 `;
 

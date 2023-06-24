@@ -1,11 +1,11 @@
 import Logo from "../../public/images/logo.png";
 import Image from "next/image";
-import Link from "next/link";
 import {
   Container,
   Title,
   TitleSlogan,
   Links,
+  Link,
   BlockLinks,
   FooterBar,
 } from "../Footer/styles";
@@ -82,7 +82,7 @@ const Footer = () => {
             </li>
             <li>
               E-mail:
-              <a
+              <Link
                 href="mailto:contato@leadster.com.br"
                 title="Email"
                 target="_blank"
@@ -90,11 +90,11 @@ const Footer = () => {
               >
                 {" "}
                 contato@leadster.com.br
-              </a>
+              </Link>
             </li>
             <li>
               Telefone:
-              <a
+              <Link
                 href="tel:+554298828-9851"
                 title="Leadster"
                 target="_blank"
@@ -102,7 +102,7 @@ const Footer = () => {
               >
                 {" "}
                 (42) 98828-9851
-              </a>
+              </Link>
             </li>
           </ul>
         </BlockLinks>

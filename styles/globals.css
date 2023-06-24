@@ -9,7 +9,9 @@
   --third-color: rgb(211, 211, 211);
   --link-color: #394e61;
   --button-color: #007dff;
+  --modal-color: rgb(0, 0, 0, 0.5); 
 }
+
 
 * {
   box-sizing: border-box;

@@ -1,16 +1,14 @@
 import React from "react";
-import Dropdown from "../Dropdown/Dropdown"
-import { CardVideo } from "./CardVideo"
+import Dropdown from "../Dropdown/Dropdown";
+import GridVideos from "../GridVideos/GridVideos";
 
 const Main = () => {
   return (
-    
-                <Dropdown />
-  )
+    <>
+      <Dropdown />
+      <GridVideos />
+    </>
+  );
 };
 
 export default Main;
-
-
-
-
