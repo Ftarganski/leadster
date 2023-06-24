@@ -6,7 +6,9 @@
 :root {
   --main-color: white;
   --second-color: #f0f8ff;
+  --third-color: rgb(211, 211, 211);
   --link-color: #394e61;
+  --button-color: #0083ff;
 }
 
 * {
