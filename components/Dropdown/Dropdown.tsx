@@ -1,37 +1,38 @@
-import React, { useState } from "react";
-import data from "../Main/videos.json";
+import React from "react";
+import Select from "react-select";
+import { MdArrowDropDown } from "react-icons/md";
 
 import {
   Container,
   ContainerOrder,
   Navbar,
-  ContentDatePublication,
   NavbarButton,
   Line,
   Text,
-  TextDate,
   TextOrder,
 } from "./styles";
 
-import { MdArrowDropDown } from "react-icons/md";
+interface DropdownProps {
+  handleOptionSelect: (option: string) => void;
+}
 
-const Dropdown: React.FC = () => {
-  const [filteredData, setFilteredData] = useState(data);
+const options = [
+  { value: "date", label: "Data de Publicação" },
+  { value: "title", label: "Título do Vídeo" },
+];
 
-  const handleFilterByDate = () => {
-    const currentDate = new Date();
-    const filteredVideos = data.filter((video) => {
-      const videoDate = new Date(video.date);
-      return videoDate <= currentDate;
-    });
-    setFilteredData(filteredVideos);
-  };
+interface DropdownProps {
+  handleOptionSelect: (option: string) => void;
+  selectedOption: string; // Adicione a prop "selectedOption"
+}
 
-  const handleFilterByTitle = (title: string) => { 
-    const filteredVideos = data.filter((video) => {
-      return video.title.toLowerCase().includes(title.toLowerCase());
-    });
-    setFilteredData(filteredVideos);
+
+const Dropdown: React.FC<DropdownProps> = ({ handleOptionSelect }) => {
+  const [selectedOption, setSelectedOption] = React.useState<string>('');
+
+  const handleOptionChange = (selected: any) => {
+    setSelectedOption(selected.value);
+    handleOptionSelect(selected.value);
   };
 
   return (
@@ -53,20 +54,14 @@ const Dropdown: React.FC = () => {
           <Text>Mídia Paga</Text>
         </NavbarButton>
 
-
         <ContainerOrder>
           <TextOrder>Ordenar por</TextOrder>
-          <ContentDatePublication>
-            <TextDate>Data de Publicação</TextDate>
-            <MdArrowDropDown
-              style={{ fontSize: "25px" }}
-              onClick={handleFilterByDate}
-            />
-          </ContentDatePublication>
+          <Select
+              options={options}
+              onChange={handleOptionChange}
+              placeholder="Data de Publicação"
+          />
         </ContainerOrder>
-
-        
-
       </Navbar>
       <Line></Line>
     </Container>

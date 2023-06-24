@@ -43,6 +43,7 @@ export const ContainerOrder = styled.div`
     margin-left: 100px;
     align-items: center;
     gap: 15px;
+    
 `;
 
 export const TextOrder = styled.h3`

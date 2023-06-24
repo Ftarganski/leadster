@@ -24,14 +24,31 @@ interface Item {
   presentation: string;
 }
 
-const GridVideos = () => {
+interface GridVideosProps {
+  selectedOption: string;
+}
+
+const GridVideos: React.FC<GridVideosProps> = ({ selectedOption }) => {
   const [selectedItem, setSelectedItem] = React.useState<Item | null>(null);
   const [currentPage, setCurrentPage] = React.useState(1);
-
+  
   const videosPerPage = 9;
   const indexOfLastVideo = currentPage * videosPerPage;
   const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
-  const currentVideos = data.slice(indexOfFirstVideo, indexOfLastVideo);
+  
+  const currentVideos = React.useMemo(() => {
+    return data.slice(indexOfFirstVideo, indexOfLastVideo);
+  }, [data, indexOfFirstVideo, indexOfLastVideo, selectedOption]);
+
+  const sortedVideos = React.useMemo(() => {
+    if (selectedOption === 'date') {
+      return [...currentVideos].sort((a, b) => (a.date > b.date ? -1 : 1));
+    } else if (selectedOption === 'title') {
+      return [...currentVideos].sort((a, b) => (a.title > b.title ? 1 : -1));
+    } else {
+      return currentVideos;
+    }
+  }, [currentVideos, selectedOption]);
 
   const handleClick = (item: Item) => {
     setSelectedItem(item);
@@ -50,7 +67,7 @@ const GridVideos = () => {
   return (
     <Container>
       <Grid>
-        {currentVideos.map((item, index) => (
+        {sortedVideos.map((item, index) => (
           <VideoItem
             key={index}
             className="grid-item"
@@ -86,7 +103,6 @@ const GridVideos = () => {
       {selectedItem && (
         <ModalVideo item={selectedItem} closeModal={closeModal} />
       )}
-
     </Container>
   );
 };
