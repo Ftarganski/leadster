@@ -32,11 +32,11 @@ export const Title = styled.h1`
 `;
 
 export const Line = styled.div`
-  height: 1px;
+  height: 2px;
   width: 35vw;
   margin: 15px 0;
   box-sizing: border-box;
-  background-color: var(--link-color);
+  background-color: var(--third-color);
 `;
 
 export const Text = styled.p`
