@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Modal,
   ModalContent,
@@ -9,12 +9,11 @@ import {
   ModalDownloads,
   ModalDownloadButton,
   ModalButtonContent,
-  Icon
+  Icon,
 } from "../ModalVideo/styles";
 
 import { FiDownloadCloud } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
-
 
 interface GridItemModalProps {
   item: {
@@ -28,35 +27,50 @@ interface GridItemModalProps {
   closeModal: () => void;
 }
 
-const ModalVideo : React.FC<GridItemModalProps>  = ({ item, closeModal }) => {
+const ModalVideo: React.FC<GridItemModalProps> = ({ item, closeModal }) => {
   return (
     <Modal>
       <ModalContent>
-        <GrClose onClick={closeModal}/>
+        <GrClose onClick={closeModal} />
         <ModalTittle>{item.title}</ModalTittle>
-        <ModalPlayer>{item.link}</ModalPlayer>
+
+        <ModalPlayer
+          width="560"
+          height="315"
+          src={`${item.link}?autoplay=1`}
+          title="YouTube video player"
+          allow="accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope"
+        ></ModalPlayer>
+
         <ModalSubTitle>Descrição</ModalSubTitle>
         <ModalDescription>{item.description}</ModalDescription>
         <ModalSubTitle>Downloads</ModalSubTitle>
         <ModalDownloads>
-          
           <ModalDownloadButton href={item.spreadsheet}>
-            <Icon><FiDownloadCloud/></Icon>
+            <Icon>
+              <FiDownloadCloud />
+            </Icon>
             <ModalButtonContent>Spreadsheet.xls</ModalButtonContent>
           </ModalDownloadButton>
-          
+
           <ModalDownloadButton href={item.document}>
-            <Icon><FiDownloadCloud/></Icon>
+            <Icon>
+              <FiDownloadCloud />
+            </Icon>
             <ModalButtonContent>Document.doc</ModalButtonContent>
           </ModalDownloadButton>
-          
-          <ModalDownloadButton href={item.presentation}>
-            <Icon><FiDownloadCloud/></Icon>
-            <ModalButtonContent>Presentation.ppt</ModalButtonContent>
-         </ModalDownloadButton>
 
+          <ModalDownloadButton href={item.presentation}>
+            <Icon>
+              <FiDownloadCloud />
+            </Icon>
+            <ModalButtonContent>Presentation.ppt</ModalButtonContent>
+          </ModalDownloadButton>
         </ModalDownloads>
-        
       </ModalContent>
     </Modal>
   );

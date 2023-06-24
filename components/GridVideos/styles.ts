@@ -33,6 +33,8 @@ export const VideoImage = styled.div`
 position: relative;
 img{
   border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 100%;
 }
 `;
 
@@ -64,21 +66,22 @@ export const VideoItem = styled.div`
       color: var(--button-color)
       }
       ${VideoImage}{
-        position: relative;
-      
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--button-color);
-        opacity: 0.4;
-        border-radius: 20px 20px 0 0;
+      position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: var(--button-color);
+          opacity: 0.4;
+          border-radius: 20px 20px 0 0;
+          padding: 0;
+          margin: 0
+        }
       }
     }
-  }
 `;
 
 export const CountPages = styled.div`
