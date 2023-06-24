@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import styles from "@/styles/Landing.module.css";
+import { useState } from "react";
 import Image from "next/image";
-import ImgChart from "../../public/images/comparativo_img_CTA.png"
-import ImgRDStation from '../../public/images/selo_RD.png';
+import ImgChart from "../../public/images/comparativo_img_CTA.png";
+import ImgRDStation from "../../public/images/selo_RD.png";
 import Card from "../../public/images/no-card-dark.webp";
 import Rating from "../../public/images/rating.webp";
 import { useRouter } from "next/router";
@@ -35,14 +34,18 @@ const Advertise = () => {
   return (
     <>
       <Container>
-        <Chart><Image src={ImgChart} height={600} alt="RD Station" /></Chart>
+        <Chart>
+          <Image src={ImgChart} height={600} alt="RD Station" />
+        </Chart>
         <Demo>
           <DemoTop>
             <h2>
               Pronto para triplicar sua
               <br /> Geração de Leads?
             </h2>
-            <p>Criação e ativação em <span>4 minutos.</span></p>
+            <p>
+              Criação e ativação em <span>4 minutos.</span>
+            </p>
           </DemoTop>
 
           <DemoBottom>
@@ -51,7 +54,6 @@ const Advertise = () => {
                 onClick={handleClick}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                className={styles.advertiseButton}
               >
                 {isHovered ? "CLIQUE PARA VER" : "VER DEMONSTRAÇÃO"}
               </DemoButton>
