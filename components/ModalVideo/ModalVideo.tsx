@@ -8,10 +8,13 @@ import {
   ModalDescription,
   ModalDownloads,
   ModalDownloadButton,
-  ModalButtonContent
+  ModalButtonContent,
+  Icon
 } from "../ModalVideo/styles";
 
 import { FiDownloadCloud } from "react-icons/fi";
+import { GrClose } from "react-icons/gr";
+
 
 interface GridItemModalProps {
   item: {
@@ -29,7 +32,7 @@ const ModalVideo : React.FC<GridItemModalProps>  = ({ item, closeModal }) => {
   return (
     <Modal>
       <ModalContent>
-      <button onClick={closeModal}>Close</button>
+        <GrClose onClick={closeModal}/>
         <ModalTittle>{item.title}</ModalTittle>
         <ModalPlayer>{item.link}</ModalPlayer>
         <ModalSubTitle>Descrição</ModalSubTitle>
@@ -37,22 +40,20 @@ const ModalVideo : React.FC<GridItemModalProps>  = ({ item, closeModal }) => {
         <ModalSubTitle>Downloads</ModalSubTitle>
         <ModalDownloads>
           
-          <ModalDownloadButton>
-            <FiDownloadCloud/>
-            <ModalButtonContent>Spreadsheet.xls<a href={item.spreadsheet}></a></ModalButtonContent>
+          <ModalDownloadButton href={item.spreadsheet}>
+            <Icon><FiDownloadCloud/></Icon>
+            <ModalButtonContent>Spreadsheet.xls</ModalButtonContent>
           </ModalDownloadButton>
           
-          <ModalDownloadButton>
-            <FiDownloadCloud/>
-            <ModalButtonContent>Document.doc<a href={item.document}></a></ModalButtonContent>
-          
+          <ModalDownloadButton href={item.document}>
+            <Icon><FiDownloadCloud/></Icon>
+            <ModalButtonContent>Document.doc</ModalButtonContent>
           </ModalDownloadButton>
           
-          <ModalDownloadButton>
-            <FiDownloadCloud/>
-            <ModalButtonContent>Presentation.ppt<a href={item.presentation}></a></ModalButtonContent>
-          
-          </ModalDownloadButton>
+          <ModalDownloadButton href={item.presentation}>
+            <Icon><FiDownloadCloud/></Icon>
+            <ModalButtonContent>Presentation.ppt</ModalButtonContent>
+         </ModalDownloadButton>
 
         </ModalDownloads>
         

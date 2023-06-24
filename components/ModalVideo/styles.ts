@@ -21,13 +21,20 @@ export const ModalContent = styled.div`
   height: 85vh;
   overflow-y: auto;
   border-top: 5px solid var(--button-color);
-  border-radius: 15px
+  border-radius: 15px;
+    svg{
+      font-size: 15px;
+      align-self: self-end;
+      margin-right: 10px;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
 `;
 
 export const ModalTittle = styled.h2`
 display: flex;
 align-items: center;
-height: 100px;
+height: 80px;
 font-size: 1.6rem;
 font-weight: bold;
 `;
@@ -35,6 +42,7 @@ font-weight: bold;
 export const ModalPlayer = styled.iframe`
  width: 560px;
  height: 315px;
+ border: none;
 `;
 
 export const ModalSubTitle = styled.div`
@@ -66,50 +74,75 @@ box-sizing: border-box;
 align-content: center;
 `;
 
-export const ModalDownloadButton = styled.div`
+export const Icon = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+  border-radius: 5px 0 0 5px;
+    svg{
+        font-size: 20px;
+        margin:0;
+        display: flex;
+        align-self: center;
+    }
+`;
+
+export const ModalDownloadButton = styled.a`
   display: flex;
   justify-content: space-evenly;
   height: 30px;
   align-items: center;
+  
     &:nth-child(1){
-      background: #90ffd1;
+      background: #c2f4ea;
       border-radius: 5px;
-      svg{
-        color: green;
-        font-size: 20px;
+          div{
+        color: #00ae7f;
       }
-      div{
-        color: green;
+      ${Icon} {
+        background: #9fefdf;
+        svg {
+          color: #00ae7f;
+        }
       }
     }
 
     &:nth-child(2){
-      background: #a7e6ff;
+      background: #c2e6ff;
       border-radius: 5px;
-      svg{
-        color: #394e61;
-        font-size: 20px;
-      }
       div{
-        color: #394e61;
+        color: #279bf1;
+      }
+      ${Icon} {
+        background: #1ad9ff;
+        svg {
+          color: #279bf1;
+        }
       }
     }
 
     &:nth-child(3){
-      background: rgb(255, 213, 134);
+      background: #fff8d0;
       border-radius: 5px;
-      svg{
-        color: orange;
-        font-size: 20px;
-      }
       div{
-        color: orange;
+        color: #a99445;
+      }
+      ${Icon} {
+        background: #fff1a0;
+        svg {
+          color: #a99445;
+        }
       }
     }
 
 `;
 
 export const ModalButtonContent = styled.div`
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: bold;
+  width: 80%;
+  display: flex;
+  justify-content: center;
 `;
