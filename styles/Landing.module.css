@@ -1,4 +1,4 @@
-/* ADVERTISE */
+/* ADVERTISE
 .advertise {
   background-color: var(--second-color);
   height: 700px;
@@ -97,9 +97,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   width: 50%;
-}
+} */
 
-/* FOOTER */
+/* FOOTER
 .footer {
   background-color: var(--main-color);
   width: 100vw;
@@ -182,7 +182,7 @@
   font-size: smaller;
   font-weight: 500;
   color: var(--link-color);
-}
+} */
 
 /* Mobile */
 @media (max-width: 700px) {
@@ -191,3 +191,4 @@
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
 }
+
