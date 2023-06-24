@@ -4,8 +4,8 @@ export const Container = styled.div`
   background-color: var(--main-color);
   width: 100vw;
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const Grid = styled.div`
@@ -81,6 +81,34 @@ export const VideoItem = styled.div`
   }
 `;
 
+export const CountPages = styled.div`
+  width: 70vw;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  box-sizing: border-box;
+  border-top: 2px solid var(--third-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+`;
 
+export const CountPagesButton = styled.button`
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0 10px;
+  width: 40px;
+  heigth: 40px;
+  border: none;
+  background-color: transparent;
+  &:hover{
+    border: 1.5px solid var(--button-color);
+    border-radius: 5px;
+    color: var(--button-color)
+  }
+`;
 
 
