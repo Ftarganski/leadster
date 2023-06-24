@@ -1,6 +1,18 @@
 import React from 'react';
 import data from '../Main/videos.json';
 import ModalVideo from '../ModalVideo/ModalVideo';
+import Image from 'next/image';
+import Thumb from '../../public/images/thumbnail.png'
+import { FaPlay } from 'react-icons/fa'
+import {
+ Container,
+ Grid,
+ VideoItem,
+ VideoImage,
+ VideoTitle,
+ PlayIcon
+
+} from "../GridVideos/styles";
 
 interface Item {
   title: string;
@@ -23,25 +35,32 @@ const GridVideos = () => {
   };
 
   return (
-    <div>
-      <div className="grid-container">
+    <Container>
+      <Grid>
         {data.map((item, index) => (
-          <div
+          <VideoItem
             key={index}
             className="grid-item"
             onClick={() => handleClick(item)}
           >
-            <div>{item.title}</div>
-            <div>{item.link}</div>
-          </div>
+            <VideoImage>
+            <Image src={Thumb} alt="Thumb Vídeo"/> 
+            <PlayIcon>
+                <FaPlay />
+              </PlayIcon>
+              
+              </VideoImage>
+            <VideoTitle>{item.title}</VideoTitle>
+          </VideoItem>
         ))}
-      </div>
+      </Grid>
+
       {selectedItem && (
         <ModalVideo item={selectedItem} closeModal={closeModal} />
       )}
-    </div>
+
+    </Container>
   );
 };
-
 
 export default GridVideos;

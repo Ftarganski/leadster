@@ -28,7 +28,11 @@ export const ModalContent = styled.div`
       margin-right: 10px;
       margin-top: 10px;
       box-sizing: border-box;
+      transition: transform 0.5s ease;
+      &:hover{
+        transform: rotate(180deg);
     }
+  }
 `;
 
 export const ModalTittle = styled.h2`

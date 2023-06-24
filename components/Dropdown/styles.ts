@@ -8,8 +8,9 @@ export const Container = styled.div`
 `;
 
 export const Navbar = styled.div`
+  width: 70vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-top: 100px;
   box-sizing: border-box;
@@ -63,7 +64,7 @@ export const TextDate = styled.h3`
 
 export const Line = styled.div`
   height: 2px;
-  width: 60vw;
+  width: 70vw;
   margin-top: 30px;
   box-sizing: border-box;
   background-color: var(--third-color);
