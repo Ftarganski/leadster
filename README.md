@@ -3,7 +3,7 @@
 Bem vindo!
 Esta é a solução encontrada para o desafio de Frontend da empresa [Leadster](https://leadster.com.br/) 
 
-## 💾  Acesso ao deploy no Vercel
+## 🌐 Acesso ao deploy no Vercel
 [Deploy Leadster](https://leadster-alpha.vercel.app/) 
 
 ## 📋 Demanda
