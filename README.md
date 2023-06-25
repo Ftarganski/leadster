@@ -3,7 +3,7 @@
 Bem vindo!
 Esta é a solução encontrada para o desafio de Frontend da empresa [Leadster](https://leadster.com.br/) 
 
-## Acesso ao deploy no Vercel
+## 💾  Acesso ao deploy no Vercel
 [Deploy Leadster](https://leadster-alpha.vercel.app/) 
 
 ## 📋 Demanda
@@ -14,7 +14,7 @@ Esta é a solução encontrada para o desafio de Frontend da empresa [Leadster](
 - [x] Utilizar Styled Components;
 - [x] Prever Layout responsivo
 
-## Desenvolvimento do Projeto
+## ✍️ Desenvolvimento do Projeto
 
 ### Decisões de projeto
 A proposta de desenvolvimento focou em 3 fatores principais, com foco no princípio DRY `Don't Repeat Yourself`
@@ -74,7 +74,7 @@ journey
       25/06: 5
 ```
 
-## Linguagens de programação
+## ⚙️ Linguagens de programação
 [![My Skills](https://skillicons.dev/icons?i=nextjs,react,html,css,js,ts&theme=light)](https://www.linkedin.com/in/targanski/)
 
 ## 🖥️ Documentação de Implantação
@@ -108,7 +108,7 @@ Este comando irá iniciar a aplicação no modo de desenvolvimento.
 5. Acesse a aplicação web no navegador utilizando o endereço local: 
 [http://localhost:3000](http://localhost:3000)
 
-## Configurações Adicionais
+## 📄 Configurações Adicionais
 
 ### Metadados
 A página inicial `/index.tsx` e o componente `/HeadSite.tsx` contêm metadados importantes para SEO e exibição nos motores de busca. Certifique-se de atualizar as informações conforme necessário, incluindo o título, descrição, palavras-chave e favicon.
