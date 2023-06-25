@@ -15,8 +15,21 @@ export const Grid = styled.div`
   justify-content: center; 
   justify-items: center;
   grid-row-gap: 30px;
+  grid-column-gap: 15px;
   margin-top: 60px;
   box-sizing: border-box;
+    @media (max-width: 1400px) {
+      grid-row-gap: 0;
+    }
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    @media (max-width: 992px) {
+      width: 90%;
+    }
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr); 
+    }
 `;
 
 export const VideoTitle = styled.h4`
@@ -54,6 +67,7 @@ export const VideoItem = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  box-sizing: border-box
   background-color: var(--main-color);
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     &:hover{
@@ -82,6 +96,9 @@ export const VideoItem = styled.div`
         }
       }
     }
+    @media (max-width: 1400px) {
+      margin: 10px;
+    }
 `;
 
 export const CountPages = styled.div`
@@ -97,21 +114,58 @@ export const CountPages = styled.div`
   border-top: 2px solid var(--third-color);
   font-size: 1.5rem;
   font-weight: bold;
+    @media (max-width: 992px) {
+      width: 90%;
+      font-size: 1.3rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+    @media (max-width: 576px) {
+      font-size: 1.1rem;
+    }
+    @media (max-width: 420px) {
+      font-size: 1.0rem;
+    }
 `;
 
 export const CountPagesButton = styled.button`
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0 0 0 10px;
+  margin-right: 10px;
   width: 40px;
   heigth: 40px;
   border: none;
   background-color: transparent;
-  &:hover{
-    border: 1.5px solid var(--button-color);
-    border-radius: 5px;
-    color: var(--button-color)
-  }
+    &:hover{
+      border: 1.5px solid var(--button-color);
+      border-radius: 5px;
+      color: var(--button-color)
+    }
+    @media (max-width: 992px) {
+      font-size: 1.3rem;
+      width: 38px;
+      heigth: 38px;
+      margin-right: 9px;
+    }
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+      width: 35px;
+      heigth: 35px;
+      margin-right: 9px;
+    }
+    @media (max-width: 576px) {
+      font-size: 1.1rem;
+      width: 32px;
+      heigth: 32px;
+      margin-right: 6px;
+    }
+    @media (max-width: 420px) {
+      font-size: 1.0rem;
+      width: 32px;
+      heigth: 32px;
+      margin-right: 5px;
+    }
 `;
 
 
