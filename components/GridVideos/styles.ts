@@ -33,9 +33,10 @@ export const Grid = styled.div`
 `;
 
 export const VideoTitle = styled.h4`
-height: 80px;
-width: 80%;
-display: flex;
+    height: auto;
+    width: 85%;
+    padding: 10px 0;
+    display: flex;
     justify-content: left;
     align-items: center;
     font-size: 1.0rem;
@@ -44,12 +45,12 @@ display: flex;
 
 export const VideoImage = styled.div`
   position: relative;
-  img{
-    display: flex;
-    border-radius: 20px 20px 0 0;
-    width: 100%;
-    height: auto;
-}
+    img{
+      position: relative;
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      height: auto;
+    }
 `;
 
 export const PlayIcon = styled.div`
