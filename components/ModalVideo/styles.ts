@@ -35,55 +35,62 @@ export const ModalContent = styled.div`
   }
     @media (max-width: 576px) {
       width: 90vw; 
+      height: 90vh;
     }
 `;
 
 export const ModalTittle = styled.h2`
-display: flex;
-align-items: center;
-height: 80px;
-font-size: 1.6rem;
-font-weight: bold;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 90%; 
+  text-align: center;
 `;
 
 export const ModalPlayer = styled.iframe`
-width: 560px;
-height: 315px;
-border: none;
-  @media (max-width: 576px) {
-    width: 100%;  
-  }
+  width: 560px;
+  height: 315px;
+  border: none;
+    @media (max-width: 576px) {
+      width: 100%;  
+    }
 `;
 
 
 
 export const ModalSubTitle = styled.div`
-display: flex;
-align-items: center;
-font-size: 1rem;
-font-weight: bold;
-height: 40px;
-width: 90%;
-border-bottom: 2px solid var(--third-color);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 40px;
+  width: 90%;
+  border-bottom: 2px solid var(--third-color);
 `;
 
 export const ModalDescription = styled.p`
-display: flex;
-width: 90%;
-font-weight: 400;
-margin: 10px 0;
-box-sizing: border-box;
+  display: flex;
+  width: 90%;
+  font-weight: 400;
+  margin: 10px 0;
+  box-sizing: border-box;
 `;
 
 export const ModalDownloads = styled.div`
-display: grid;
-justify-content: space-between;
-grid-template-columns: 30% 30% 30%;
-width: 90%;
-height: 50px;
-margin-top: 10px;
-box-sizing: border-box;
-align-content: center;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr); 
+  width: 90%;
+  height: 50px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  align-content: center;
+  grid-gap: 5px;
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
 `;
 
 export const Icon = styled.div`
