@@ -43,11 +43,12 @@ display: flex;
 `;
 
 export const VideoImage = styled.div`
-position: relative;
-img{
-  border-radius: 20px 20px 0 0;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  img{
+    display: flex;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: auto;
 }
 `;
 
