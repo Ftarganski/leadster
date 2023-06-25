@@ -8,6 +8,15 @@
 - Utilizar Styled Components;
 - Prever Layout responsivo
 
+
+```mermeid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 ## Desenvolvimento do Projeto
 
 ### Decisões de projeto
