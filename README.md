@@ -2,40 +2,64 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Teste Leadster FrontEnd - Junho 2023
 
-### Deploy no Vercel
-[Deploy Vercel](https://leadster-alpha.vercel.app/) 
+### Demanda
+- Desenvolver um landing page com o framework NextJS;
+- Utilizar um arquivo {JSON} para a listagem de vídeos (e seus detalhes) pasra abrir em um modal;
+- Utilização de padrões de sintaxe e semântica de código (HTML, Javascript e CSS);
+- Atenção à usabilidade da página;
+- Utilizar Styled Components;
+- Prever Layout responsivo
 
-First, run the development server:
+## Documentação de Implantação
 
+## Pré-requisitos
+Antes de prosseguir com a implantação, é necessário garantir que o ambiente de desenvolvimento atenda aos seguintes pré-requisitos:
+Node.js (versão 12 ou superior) instalado no servidor de hospedagem
+Gerenciador de pacotes npm (ou yarn) instalado
+
+## Etapas de Implantação
+Siga as etapas abaixo para implantar o código web:
+
+1. Clone o repositório do código web para o servidor de hospedagem.
+
+2. Navegue até o diretório raiz do projeto clonado.
+
+3. Execute o seguinte comando para instalar as dependências do projeto:
+```bash
+npm install
+# or
+yarn install
+```
+
+4. Após a conclusão da instalação das dependências, execute o seguinte comando para iniciar a aplicação:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 ```
+Este comando irá iniciar a aplicação no modo de desenvolvimento.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Acesse a aplicação web no navegador utilizando o endereço local: 
+[http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Configurações Adicionais
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Metadados
+A página inicial `/index.tsx/*` e o componente `/HeadSite.tsx/*` contêm metadados importantes para SEO e exibição nos motores de busca. Certifique-se de atualizar as informações conforme necessário, incluindo o título, descrição, palavras-chave e favicon.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Imagens e Logos
+Certifique-se de substituir as imagens de exemplo pelos arquivos corretos da sua aplicação. As imagens estão localizadas na pasta `/public/images/*`. Certifique-se de manter a estrutura correta de pastas e atualize as referências de imagem nos componentes apropriados.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Dados dos Vídeos
+O componente `/GridVideos.tsx/*` utiliza dados estáticos de vídeos a partir de um arquivo JSON `/Main/videos.json/*`. Certifique-se de atualizar os dados do arquivo JSON com os vídeos corretos da sua aplicação.
 
-## Learn More
+### Considerações Finais
+Após a conclusão dessas etapas, o código web estará implantado e acessível por meio do servidor de hospedagem. Certifique-se de realizar os testes necessários para garantir que a aplicação esteja funcionando conforme o esperado.
 
-To learn more about Next.js, take a look at the following resources:
+Lembre-se de que esta documentação cobre apenas a implantação do código web. Outros aspectos, como implantação de banco de dados, configurações de servidor e escalabilidade, podem exigir etapas adicionais que não são abordadas aqui.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deploy de Desenvolvimento
+O deploy de desenvolvimento foi realizado na plataforma Vercel e pode ser acessado em [Deploy Leadster](https://leadster-alpha.vercel.app/) 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
