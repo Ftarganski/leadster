@@ -44,9 +44,10 @@ export const VideoTitle = styled.h4`
 `;
 
 export const VideoImage = styled.div`
-  position: relative;
+    position: relative;
+    width: 100%;
+    height: auto;
     img{
-      position: relative;
       border-radius: 20px 20px 0 0;
       width: 100%;
       height: auto;
@@ -102,6 +103,10 @@ export const VideoItem = styled.div`
     }
     @media (max-width: 1400px) {
       margin: 10px;
+    }
+    @media (max-width: 420px) {
+      width: 100%;
+      height: auto;
     }
 `;
 
