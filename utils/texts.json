@@ -1,7 +1,39 @@
 { 
-    "dropdown": {
+    "head" : {
+        "title": "Leadster: Chatbot de Marketing para Aumentar Geração de Leads",
+        "description": "Conheça a Leadster, um Chatbot de Marketing Conversacional para Aumentar a Geração de Leads Qualificados no seu Site. Visite e saiba mais!",
+        "keywords": "Leadster, Chatbot, Marketing"
     },
 
+    "heroLogo" : {
+        "altLogo": "Logo Leadster"
+    },
+
+    "hero" :{
+        "titleBalloon" : "WEBNARS EXCLUSIVOS",
+        "subtitle" : "Menos Conversinha,",
+        "title" : "Mais Conversão",
+        "slogan" : "Conheça as estratégias que <span>mudaram o jogo</span> e como aplicá-las no seu negócio",
+        "altDots" : "Três tracejados em cima do da vogal ó"
+    },
+
+    "dropdown": {
+        "btnAgency" : "Agências",
+        "btnChatbot" : "Chatbot",
+        "btnMarketing": "Marketing Digital",
+        "btnLeads": "Geração de Leads",
+        "btnMidia": "Mídia Paga",
+        "selTitle" : "Ordenar por",
+        "selPlaceholder": "Data de Publicação"
+    },
+
+    "modalVideo" : {
+        "subDescription" : "Descrição",
+        "sbDownload" : "Downloads",
+        "btnSpread" : "Spreadsheet.xls",
+        "btnDoc" : "Document.doc",
+        "btnPresent" : "Presentation.ppt"
+    },
 
     "advertise": {
         "title": "Pronto para triplicar sua<br/>Geração de Leads?",

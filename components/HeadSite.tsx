@@ -1,15 +1,29 @@
 import React from "react";
 import Head from "next/head";
+import { getTexts } from "../utils/textUtils";
 
 const HeadSite = () => {
+  const t = getTexts();
+  const getPageTitle = () => {
+    return t.head.title;
+  };
+
+  const getPageDescription = () => {
+    return t.head.description;
+  };
+
+  const getKeywords = () => {
+    return t.head.keywords;
+  };
+
   return (
     <>
       <Head>
-        <title>Leadster: Chatbot de Marketing para Aumentar Geração de Leads</title>
-        <meta name="description" content="Conheça a Leadster, um Chatbot de Marketing Conversacional para Aumentar a Geração de Leads Qualificados no seu Site. Visite e saiba mais!"/>
+        <title>{getPageTitle()}</title>
+        <meta name="description" content={getPageDescription()} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="../images/favicon.png" />
-        <meta name="keywords" content="Leadster, Chatbot, Marketing" />
+        <meta name="keywords" content={getKeywords()} />
       </Head>
     </>
   );

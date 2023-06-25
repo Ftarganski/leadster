@@ -62,7 +62,7 @@ const GridVideos: React.FC<GridVideosProps> = ({ selectedOption }) => {
             onClick={() => handleClick(item)}
           >
             <VideoImage>
-              <Image src={Thumb} alt="Thumb Vídeo" /> 
+              <Image src={Thumb} alt={item.title}/> 
               <PlayIcon>
                 <FaPlay />
               </PlayIcon>

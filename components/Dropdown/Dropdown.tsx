@@ -19,7 +19,7 @@ const options = [
 
 const Dropdown: React.FC<DropdownProps> = ({ handleOptionSelect }) => {
   const t = getTexts();
-  const [selectedOption, setSelectedOption] = React.useState<string>('');
+  const [selectedOption, setSelectedOption] = React.useState<string>("");
 
   const handleOptionChange = (selected: any) => {
     setSelectedOption(selected.value);
@@ -30,27 +30,27 @@ const Dropdown: React.FC<DropdownProps> = ({ handleOptionSelect }) => {
     <Container>
       <Navbar>
         <NavbarButton>
-          <Text>Agências</Text>
+          <Text>{t.dropdown.btnAgency}</Text>
         </NavbarButton>
         <NavbarButton>
-          <Text>Chatbot</Text>
+          <Text>{t.dropdown.btnChatbot}</Text>
         </NavbarButton>
         <NavbarButton>
-          <Text>Marketing Digital</Text>
+          <Text>{t.dropdown.btnMarketing}</Text>
         </NavbarButton>
         <NavbarButton>
-          <Text>Geração de Leads</Text>
+          <Text>{t.dropdown.btnLeads}</Text>
         </NavbarButton>
         <NavbarButton>
-          <Text>Mídia Paga</Text>
+          <Text>{t.dropdown.btnMidia}</Text>
         </NavbarButton>
 
         <ContainerOrder>
-          <TextOrder>Ordenar por</TextOrder>
+          <TextOrder>{t.dropdown.selTitle}</TextOrder>
           <Select
-              options={options}
-              onChange={handleOptionChange}
-              placeholder="Data de Publicação"
+            options={options}
+            onChange={handleOptionChange}
+            placeholder={t.dropdown.selPlaceholder}
           />
         </ContainerOrder>
       </Navbar>

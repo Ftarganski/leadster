@@ -12,7 +12,7 @@ const Main = () => {
   return (
     <>
       <Dropdown handleOptionSelect={handleOptionSelect} selectedOption={selectedOption} />
-      <GridVideos selectedOption={selectedOption} />
+      <GridVideos selectedOption={selectedOption} selectedCategory={""} />
     </>
   );
 };

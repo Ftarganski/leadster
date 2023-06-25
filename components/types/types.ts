@@ -9,6 +9,7 @@ export interface Item {
   
   export interface GridVideosProps {
     selectedOption: string;
+    selectedCategory: string;
   }
  
   export interface DropdownProps {

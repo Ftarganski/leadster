@@ -2,6 +2,7 @@ import React from "react";
 import { FiDownloadCloud } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 import { GridItemModalProps } from "../types/types";
+import { getTexts } from "../../utils/textUtils";
 import {
   Modal,
   ModalContent,
@@ -16,6 +17,7 @@ import {
 } from "../ModalVideo/styles";
 
 const ModalVideo: React.FC<GridItemModalProps> = ({ item, closeModal }) => {
+  const t = getTexts();
   return (
     <Modal>
       <ModalContent>
@@ -34,29 +36,29 @@ const ModalVideo: React.FC<GridItemModalProps> = ({ item, closeModal }) => {
             gyroscope"
         ></ModalPlayer>
 
-        <ModalSubTitle>Descrição</ModalSubTitle>
+        <ModalSubTitle>{t.modalVideo.subDescription}</ModalSubTitle>
         <ModalDescription>{item.description}</ModalDescription>
-        <ModalSubTitle>Downloads</ModalSubTitle>
+        <ModalSubTitle>{t.modalVideo.sbDownload}</ModalSubTitle>
         <ModalDownloads>
           <ModalDownloadButton href={item.spreadsheet}>
             <Icon>
               <FiDownloadCloud />
             </Icon>
-            <ModalButtonContent>Spreadsheet.xls</ModalButtonContent>
+            <ModalButtonContent>{t.modalVideo.btnSpread}</ModalButtonContent>
           </ModalDownloadButton>
 
           <ModalDownloadButton href={item.document}>
             <Icon>
               <FiDownloadCloud />
             </Icon>
-            <ModalButtonContent>Document.doc</ModalButtonContent>
+            <ModalButtonContent>{t.modalVideo.btnDoc}</ModalButtonContent>
           </ModalDownloadButton>
 
           <ModalDownloadButton href={item.presentation}>
             <Icon>
               <FiDownloadCloud />
             </Icon>
-            <ModalButtonContent>Presentation.ppt</ModalButtonContent>
+            <ModalButtonContent>{t.modalVideo.btnPresent}</ModalButtonContent>
           </ModalDownloadButton>
         </ModalDownloads>
       </ModalContent>
