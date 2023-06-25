@@ -17,7 +17,7 @@ Esta é a solução encontrada para o desafio de Frontend da empresa [Leadster](
 ## ✍️ Desenvolvimento do Projeto
 
 ### Decisões de projeto
-A proposta de desenvolvimento focou em 3 fatores principais, com foco no princípio DRY `Don't Repeat Yourself`
+A proposta de desenvolvimento focou em 3 fatores principais, com foco na metodologia **DRY** `Don't Repeat Yourself`, **Clean Code** e **SOLID**.
 - Consistência: buscou-se manter uma estrutura consistente em todo o código para facilitar a leitura e compreensão, com o uso de estilo de codificação consistente, incluindo a nomenclatura de variáveis, formatação, indentação e comentários.
 - Clareza: a escrita do código foi realizada buscando-se a clareza e a legibilidade, evitando abreviações excessivas e utilizando nomes descritivos para funções, variáveis e classes. 
 - Modularidade: o projeto se pautou pela divisão do mesmo em componente e funções menores e bem definidas, cada uma com uma responsabilidade específica, visando a manutenção, teste e reutilização do código.
@@ -74,8 +74,8 @@ journey
       25/06: 5
 ```
 
-## ⚙️ Linguagens de programação
-[![My Skills](https://skillicons.dev/icons?i=nextjs,react,html,css,js,ts&theme=light)](https://www.linkedin.com/in/targanski/)
+## ⚙️ Linguagens de Programação Utilizadas
+[![My Skills](https://skillicons.dev/icons?i=nextjs,html,css,js,ts&theme=light)](https://www.linkedin.com/in/targanski/)
 
 ## 🖥️ Documentação de Implantação
 
