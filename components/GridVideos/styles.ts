@@ -38,7 +38,7 @@ width: 80%;
 display: flex;
     justify-content: left;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     word-break: break-word;  
 `;
 
@@ -69,6 +69,8 @@ export const VideoItem = styled.div`
   align-items: center;
   border-radius: 15px;
   box-sizing: border-box
+  margin: 0px;
+  padding: 0px;
   background-color: var(--main-color);
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     &:hover{
