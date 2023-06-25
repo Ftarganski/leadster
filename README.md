@@ -24,9 +24,9 @@ Na organização do código buscou-se seguer os seguintes princípios:
 
 ### Linha de Raciocínio
 Para a realização do desafio estabeleci alguns parâmetros a seguir no desenvolvimento
-- Dividir o projeto em 5 partes principais `/HeroLogo.tsx`, `/Hero.tsx`, `/Main.tsx`, `/Advertise.tsx`, `/Footer.tsx`, seguindo a lógica de que cada um possa ser reutilizado em outros projetos. 
-- Seção principal `/Main.tsx`, que renderiza o principal contexto do projeto, foi subdividida em `/Dropdown.tsx` para fazer a filtragem dos vídeos e `/GridVideos.tsx` que efetivamente renderiz a sequência de vídeos na página.
-- De `/GridVideos.tsx` deriva `/ModalVideo.tsx` que é responsável pela renderização do modal quando um dos vídeos é selecionado.
+- Inicialmente o projeto foi dividido em 5 partes principais `/HeroLogo.tsx`, `/Hero.tsx`, `/Main.tsx`, `/Advertise.tsx`, `/Footer.tsx`, seguindo a lógica de que cada um componente ser reutilizado em outros projetos. 
+- A seção `/Main.tsx`, que renderiza o principal contexto do projeto, foi subdividida em `/Dropdown.tsx` para fazer a filtragem dos vídeos e `/GridVideos.tsx` que efetivamente renderiza a sequência de vídeos na página.
+- Do componente `/GridVideos.tsx` deriva `/ModalVideo.tsx` que é responsável pela renderização do modal quando um dos vídeos é selecionado.
 - Foi gerado um arquivo `/videos.json` para consumo de informações pelo `/GridVideos.tsx`. Este é o arquivo de entrada de todas as informações relativas aos vídeos.
 
 ### Organograma Estrutural
@@ -115,6 +115,3 @@ Lembre-se de que esta documentação cobre apenas a implantação do código web
 
 ### Deploy de Desenvolvimento
 O deploy de desenvolvimento foi realizado na plataforma Vercel e pode ser acessado em [Deploy Leadster](https://leadster-alpha.vercel.app/) 
-
-
-
