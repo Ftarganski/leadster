@@ -5,6 +5,7 @@ import Image from "next/image";
 import Thumb from "../../public/images/thumbnail.png";
 import { FaPlay } from "react-icons/fa";
 import { Item, GridVideosProps } from "../types/types";
+import { getTexts } from "../../utils/textUtils";
 import {
   Container,
   Grid,
@@ -20,6 +21,7 @@ const GridVideos: React.FC<GridVideosProps> = ({
   selectedOption,
   selectedCategory,
 }) => {
+  const t = getTexts();
   const [selectedItem, setSelectedItem] = React.useState<Item | null>(null);
   const [currentPage, setCurrentPage] = React.useState(1);
 
@@ -27,7 +29,6 @@ const GridVideos: React.FC<GridVideosProps> = ({
   const indexOfLastVideo = currentPage * videosPerPage;
   const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
 
-  //FILTRO
   const filteredVideos = React.useMemo(() => {
     if (selectedCategory) {
       return data.filter((item) => item.category === selectedCategory);
@@ -86,7 +87,7 @@ const GridVideos: React.FC<GridVideosProps> = ({
 
       {totalPages > 1 && (
         <CountPages>
-          Página
+          {t.gridVideos.countTitle}
           {Array.from({ length: totalPages }, (_, index) => index + 1).map(
             (pageNumber) => (
               <CountPagesButton
