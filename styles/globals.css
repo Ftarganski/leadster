@@ -6,8 +6,8 @@
 :root {
   --main-color: white;
   --second-color: #f0f8ff;
-  --third-color: rgb(211, 211, 211);
-  --link-color: #394e61;
+  --third-color: rgb(236, 236, 236);
+  --link-color: #969ca1;
   --button-color: #007dff;
   --modal-color: rgb(0, 0, 0, 0.5); 
 }

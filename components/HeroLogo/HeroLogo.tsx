@@ -6,7 +6,7 @@ import { Container } from "../HeroLogo/styles";
 const HeroLogo = () => {
   const t = getTexts();
   return (
-    <Container>
+    <Container id="home">
       <Image src={LogoLeadster} alt={t.heroLogo.altLogo} height={50} quality={100} />
     </Container>
   );

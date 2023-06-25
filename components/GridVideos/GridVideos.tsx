@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../Main/videos.json";
+import data from "../../server/videos.json";
 import ModalVideo from "../ModalVideo/ModalVideo";
 import Image from "next/image";
 import Thumb from "../../public/images/thumbnail.png";
