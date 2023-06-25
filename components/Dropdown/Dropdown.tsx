@@ -7,7 +7,6 @@ import {
   ContainerOrder,
   Navbar,
   NavbarButton,
-  Line,
   Text,
   TextOrder,
 } from "./styles";
@@ -50,17 +49,16 @@ const Dropdown: React.FC<DropdownProps> = ({ handleOptionSelect }) => {
         <NavbarButton onClick={() => handleCategorySelect("media")}>
           <Text>{t.dropdown.btnMidia}</Text>
         </NavbarButton>
-
-        <ContainerOrder>
+      </Navbar>
+      <ContainerOrder>
           <TextOrder>{t.dropdown.selTitle}</TextOrder>
           <Select
             options={options}
             onChange={handleOptionChange}
             placeholder={t.dropdown.selPlaceholder}
           />
-        </ContainerOrder>
-      </Navbar>
-      <Line></Line>
+      </ContainerOrder>
+      
     </Container>
   );
 };

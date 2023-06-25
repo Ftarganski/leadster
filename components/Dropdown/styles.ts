@@ -4,23 +4,40 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 0 15vw;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--third-color);
+    @media (max-width: 992px) {
+      margin: 0 5vw;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      
+    }
 `;
 
 export const Navbar = styled.div`
-  width: 70vw;
+  width: 65%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: end;
   align-items: center;
-  padding-top: 100px;
   box-sizing: border-box;
   gap: 15px;
+    @media (max-width: 768px) {
+      width: 100%;
+      justify-content: center;
+    }
 `;
 
 export const NavbarButton = styled.div`
   border: 1px solid var(--link-color);
   padding: 8px 20px;
   border-radius: 50px;
+  width: fit-content;
   &:hover{
     color: var(--button-color);
     border: 1px solid var(--button-color);
@@ -38,14 +55,28 @@ export const Text = styled.h3`
 `;
 
 export const ContainerOrder = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    gap: 15px;
-    width: 30%;
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
     div:nth-child(1) {
       width: 150px
+    }
+    @media (max-width: 1400px) {
+      flex-direction: column;
+      align-items: self-end;
+    }
+    @media (max-width: 768px) {
+      flex-direction: row;
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width: 420px) {
+      flex-direction: column;
+      align-items: center
     }
     
 `;
@@ -53,14 +84,3 @@ export const ContainerOrder = styled.div`
 export const TextOrder = styled.h3`
   font-size: 1rem;
 `;
-
-
-export const Line = styled.div`
-  height: 2px;
-  width: 100vw;
-  margin-top: 30px;
-  box-sizing: border-box;
-  background-color: var(--third-color);
-`;
-
-
