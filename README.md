@@ -8,15 +8,6 @@
 - Utilizar Styled Components;
 - Prever Layout responsivo
 
-
-```mermeid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
 ## Desenvolvimento do Projeto
 
 ### Decisões de projeto
@@ -35,8 +26,39 @@ Na organização do código buscou-se seguer os seguintes princípios:
 Para a realização do desafio estabeleci alguns parâmetros a seguir no desenvolvimento
 - Dividir o projeto em 5 partes principais `/HeroLogo.tsx`, `/Hero.tsx`, `/Main.tsx`, `/Advertise.tsx`, `/Footer.tsx`, seguindo a lógica de que cada um possa ser reutilizado em outros projetos. 
 
+### Organograma Estrutural
+```mermaid
+%%{init: { 'theme': 'dark' } }%%
+flowchart TD;
+    HeadSite-->index;
+    index-->Landing;
+    Landing-->HeroLogo;
+    Landing-->Hero;
+    Landing-->Main;
+    Landing-->Advertise;
+    Landing-->Footer;
+    Main-->Dropdown;
+    Main-->GridVideos;
+    GridVideos-->ModalVideo;
+    styles.ts-->components;
+    types.ts-->components;
+```
 
-
+### Linha do Tempo
+```mermaid
+%%{init: { 'theme': 'dark' } }%%
+journey
+    section Planejamento
+      23/06: 5
+    section Execução
+      23/06: 5
+      24/06: 3
+      25/06: 5
+    section Deploy
+      25/06: 5
+    section Documentação
+      25/06: 5
+```
 
 ## Documentação de Implantação
 
