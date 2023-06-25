@@ -15,6 +15,8 @@ export interface Item {
   export interface DropdownProps {
     handleOptionSelect: (option: string) => void;
     selectedOption: string;
+    handleCategorySelect: (category: string) => void;
+    selectedCategory: string;
   }
   
   export interface Option {

@@ -1,10 +1,10 @@
-import React from 'react';
-import data from '../Main/videos.json';
-import ModalVideo from '../ModalVideo/ModalVideo';
-import Image from 'next/image';
-import Thumb from '../../public/images/thumbnail.png';
-import { FaPlay } from 'react-icons/fa';
-import { Item, GridVideosProps } from '../types/types';
+import React from "react";
+import data from "../Main/videos.json";
+import ModalVideo from "../ModalVideo/ModalVideo";
+import Image from "next/image";
+import Thumb from "../../public/images/thumbnail.png";
+import { FaPlay } from "react-icons/fa";
+import { Item, GridVideosProps } from "../types/types";
 import {
   Container,
   Grid,
@@ -13,25 +13,37 @@ import {
   VideoTitle,
   PlayIcon,
   CountPages,
-  CountPagesButton
+  CountPagesButton,
 } from "../GridVideos/styles";
 
-const GridVideos: React.FC<GridVideosProps> = ({ selectedOption }) => {
+const GridVideos: React.FC<GridVideosProps> = ({
+  selectedOption,
+  selectedCategory,
+}) => {
   const [selectedItem, setSelectedItem] = React.useState<Item | null>(null);
   const [currentPage, setCurrentPage] = React.useState(1);
-  
+
   const videosPerPage = 9;
   const indexOfLastVideo = currentPage * videosPerPage;
   const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
+
+  //FILTRO
+  const filteredVideos = React.useMemo(() => {
+    if (selectedCategory) {
+      return data.filter((item) => item.category === selectedCategory);
+    } else {
+      return data;
+    }
+  }, [selectedCategory]);
   
   const currentVideos = React.useMemo(() => {
-    return data.slice(indexOfFirstVideo, indexOfLastVideo);
-  }, [data, indexOfFirstVideo, indexOfLastVideo, selectedOption]);
+    return filteredVideos.slice(indexOfFirstVideo, indexOfLastVideo);
+  }, [filteredVideos, indexOfFirstVideo, indexOfLastVideo]);
 
   const sortedVideos = React.useMemo(() => {
-    if (selectedOption === 'date') {
+    if (selectedOption === "date") {
       return [...currentVideos].sort((a, b) => (a.date > b.date ? -1 : 1));
-    } else if (selectedOption === 'title') {
+    } else if (selectedOption === "title") {
       return [...currentVideos].sort((a, b) => (a.title > b.title ? 1 : -1));
     } else {
       return currentVideos;
@@ -46,7 +58,7 @@ const GridVideos: React.FC<GridVideosProps> = ({ selectedOption }) => {
     setSelectedItem(null);
   };
 
-  const totalPages = Math.ceil(data.length / videosPerPage);
+  const totalPages = Math.ceil(filteredVideos.length / videosPerPage);
 
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
@@ -62,7 +74,7 @@ const GridVideos: React.FC<GridVideosProps> = ({ selectedOption }) => {
             onClick={() => handleClick(item)}
           >
             <VideoImage>
-              <Image src={Thumb} alt={item.title}/> 
+              <Image src={Thumb} alt={item.title} />
               <PlayIcon>
                 <FaPlay />
               </PlayIcon>
@@ -73,7 +85,8 @@ const GridVideos: React.FC<GridVideosProps> = ({ selectedOption }) => {
       </Grid>
 
       {totalPages > 1 && (
-        <CountPages>Página
+        <CountPages>
+          Página
           {Array.from({ length: totalPages }, (_, index) => index + 1).map(
             (pageNumber) => (
               <CountPagesButton

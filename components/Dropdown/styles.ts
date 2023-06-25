@@ -29,7 +29,6 @@ export const NavbarButton = styled.div`
     color: var(--main-color);
     border: 1px solid var(--button-color);
     background-color: var(--button-color)
-
   }
 `;
 
@@ -40,9 +39,14 @@ export const Text = styled.h3`
 
 export const ContainerOrder = styled.div`
     display: flex;
-    margin-left: 100px;
+    flex-direction: row;
+    justify-content: end;
     align-items: center;
     gap: 15px;
+    width: 30%;
+    div:nth-child(1) {
+      width: 150px
+    }
     
 `;
 
@@ -50,22 +54,10 @@ export const TextOrder = styled.h3`
   font-size: 1rem;
 `;
 
-export const ContentDatePublication = styled.div`
-    border: 1px solid #000;
-    padding: 5px 10px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-`;
-
-export const TextDate = styled.h3`
-  font-size: 1rem;
-  font-weight: bold;
-`;
 
 export const Line = styled.div`
   height: 2px;
-  width: 70vw;
+  width: 100vw;
   margin-top: 30px;
   box-sizing: border-box;
   background-color: var(--third-color);

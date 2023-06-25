@@ -19,29 +19,35 @@ const options = [
 
 const Dropdown: React.FC<DropdownProps> = ({ handleOptionSelect }) => {
   const t = getTexts();
-  const [selectedOption, setSelectedOption] = React.useState<string>("");
 
+  const [selectedOption, setSelectedOption] = React.useState<string>("");
   const handleOptionChange = (selected: any) => {
     setSelectedOption(selected.value);
     handleOptionSelect(selected.value);
   };
 
+  const [selectedCategory, setSelectedCategory] = React.useState<string>("");
+  const handleCategorySelect = (category: string) => {
+    setSelectedCategory(category);
+    handleOptionSelect(selectedCategory);
+  };
+
   return (
     <Container>
       <Navbar>
-        <NavbarButton>
+        <NavbarButton onClick={() => handleCategorySelect("agency")}>
           <Text>{t.dropdown.btnAgency}</Text>
         </NavbarButton>
-        <NavbarButton>
+        <NavbarButton onClick={() => handleCategorySelect("chatbot")}>
           <Text>{t.dropdown.btnChatbot}</Text>
         </NavbarButton>
-        <NavbarButton>
+        <NavbarButton onClick={() => handleCategorySelect("marketing")}>
           <Text>{t.dropdown.btnMarketing}</Text>
         </NavbarButton>
-        <NavbarButton>
+        <NavbarButton onClick={() => handleCategorySelect("leads")}>
           <Text>{t.dropdown.btnLeads}</Text>
         </NavbarButton>
-        <NavbarButton>
+        <NavbarButton onClick={() => handleCategorySelect("media")}>
           <Text>{t.dropdown.btnMidia}</Text>
         </NavbarButton>
 
