@@ -18,7 +18,7 @@ export const ModalContent = styled.div`
   background-color: var(--main-color);
   align-items: center;
   width: 560px;
-  height: 85vh;
+  height: 90vh;
   overflow-y: auto;
   border-top: 5px solid var(--button-color);
   border-radius: 15px;
@@ -33,6 +33,9 @@ export const ModalContent = styled.div`
         transform: rotate(180deg);
     }
   }
+    @media (max-width: 576px) {
+      width: 90vw; 
+    }
 `;
 
 export const ModalTittle = styled.h2`
@@ -44,10 +47,15 @@ font-weight: bold;
 `;
 
 export const ModalPlayer = styled.iframe`
- width: 560px;
- height: 315px;
- border: none;
+width: 560px;
+height: 315px;
+border: none;
+  @media (max-width: 576px) {
+    width: 100%;  
+  }
 `;
+
+
 
 export const ModalSubTitle = styled.div`
 display: flex;
