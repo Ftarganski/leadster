@@ -25,6 +25,9 @@ Na organização do código buscou-se seguer os seguintes princípios:
 ### Linha de Raciocínio
 Para a realização do desafio estabeleci alguns parâmetros a seguir no desenvolvimento
 - Dividir o projeto em 5 partes principais `/HeroLogo.tsx`, `/Hero.tsx`, `/Main.tsx`, `/Advertise.tsx`, `/Footer.tsx`, seguindo a lógica de que cada um possa ser reutilizado em outros projetos. 
+- Seção principal `/Main.tsx`, que renderiza o principal contexto do projeto, foi subdividida em `/Dropdown.tsx` para fazer a filtragem dos vídeos e `/GridVideos.tsx` que efetivamente renderiz a sequência de vídeos na página.
+- De `/GridVideos.tsx` deriva `/ModalVideo.tsx` que é responsável pela renderização do modal quando um dos vídeos é selecionado.
+- Foi gerado um arquivo `/videos.json` para consumo de informações pelo `/GridVideos.tsx`. Este é o arquivo de entrada de todas as informações relativas aos vídeos.
 
 ### Organograma Estrutural
 ```mermaid
@@ -42,6 +45,8 @@ flowchart TD;
     GridVideos-->ModalVideo;
     styles.ts-->components;
     types.ts-->components;
+    videos.json-->Consumo-GridVideos;
+    videos.json-->Consumo-Dropdown;
 ```
 
 ### Linha do Tempo
