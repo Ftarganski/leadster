@@ -8,6 +8,27 @@
 - Utilizar Styled Components;
 - Prever Layout responsivo
 
+## Desenvolvimento do Projeto
+
+### Decisões de projeto
+A proposta de desenvolvimento focou em 3 fatores principais, com foco no princípio DRY `Don't Repeat Yourself`
+- Consistência: buscou-se manter uma estrutura consistente em todo o código para facilitar a leitura e compreensão, com o uso de estilo de codificação consistente, incluindo a nomenclatura de variáveis, formatação, indentação e comentários.
+- Clareza: a escrita do código foi realizada buscando-se a clareza e a legibilidade, evitando abreviações excessivas e utilizando nomes descritivos para funções, variáveis e classes. 
+- Modularidade: o projeto se pautou pela divisão do mesmo em componente e funções menores e bem definidas, cada uma com uma responsabilidade específica, visando a manutenção, teste e reutilização do código.
+
+### Organização do código:
+Na organização do código buscou-se seguer os seguintes princípios:
+- Estrutura de diretórios: organização do código em uma estrutura de diretórios lógica e coerente, separando componentes distintos, como módulos, modelos, arquivos de configuração.
+- Modularidade: divisão do código em arquivos e módulos separados, com base em sua funcionalidade ou propósito.
+- Documentação: descritivo com uma documentação adequada para o projeto, descreve a finalidade do projeto, instruções para instalação, dependências, configuração e execução.
+
+### Linha de Raciocínio
+Para a realização do desafio estabeleci alguns parâmetros a seguir no desenvolvimento
+- Dividir o projeto em 5 partes principais `/HeroLogo.tsx`, `/Hero.tsx`, `/Main.tsx`, `/Advertise.tsx`, `/Footer.tsx`, seguindo a lógica de que cada um possa ser reutilizado em outros projetos. 
+
+
+
+
 ## Documentação de Implantação
 
 ### Pré-requisitos
