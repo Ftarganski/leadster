@@ -1,5 +1,8 @@
 # Teste Leadster FrontEnd - Junho 2023
 
+Bem vindo!
+Esta é a solução encontrada para o desafio de Frontend da empresa [Leadster](https://leadster.com.br/) 
+
 ## Acesso ao deploy no Vercel
 [Deploy Leadster](https://leadster-alpha.vercel.app/) 
 
@@ -86,7 +89,7 @@ Siga as etapas abaixo para implantar o código web:
 
 1. Clone o repositório do código web para o servidor de hospedagem.
 ```bash
-git clone [https://github.com/Ftarganski/leadster.git]
+git clone https://github.com/Ftarganski/leadster.git
 ```
 
 2. Navegue até o diretório raiz do projeto clonado.
@@ -123,16 +126,3 @@ Lembre-se de que esta documentação cobre apenas a implantação do código web
 
 ### Deploy de Desenvolvimento
 O deploy de desenvolvimento foi realizado na plataforma Vercel e pode ser acessado em [Deploy Leadster](https://leadster-alpha.vercel.app/) 
-
-
-
-
-# Leadster
-
-Welcome! This respostitory contains my solution for [Leadster](https://leadster.com.br/) Frontend challenge.
-
-# Vercel App link
-
-[Leadster project](https://leadster-frontend.vercel.app/)
-
-
