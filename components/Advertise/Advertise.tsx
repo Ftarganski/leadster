@@ -37,7 +37,7 @@ const Advertise = () => {
     <>
       <Container>
         <Chart>
-          <Image src={ImgChart} height={600} alt={t.advertise.altChart} />
+          <Image src={ImgChart}  alt={t.advertise.altChart} />
         </Chart>
         <Demo>
           <DemoTop>

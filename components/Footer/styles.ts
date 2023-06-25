@@ -11,6 +11,7 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   width: 70vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -18,15 +19,23 @@ export const Title = styled.div`
       align-self: center;
       margin-top: 50px;
       box-sizing: border-box;
+      @media (max-width: 420px) {
+        width: 60vw;  
+        height: auto; 
+        margin-top: 40px;
+      }
       }
 `;
 
 export const TitleSlogan = styled.h6`
-  font-size: medium;
+  font-size: 1rem;
   align-self: center;
   margin-top: 10px;
   box-sizing: border-box;
   margin-bottom: 25px;
+  @media (max-width: 420px) {
+    font-size: .87rem;   
+  }
 `;
 
 export const Links = styled.div`
