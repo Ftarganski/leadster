@@ -1,7 +1,7 @@
 import React from "react";
 import Select from "react-select";
 import { MdArrowDropDown } from "react-icons/md";
-
+import { DropdownProps, Option } from "../types/types";
 import {
   Container,
   ContainerOrder,
@@ -12,20 +12,10 @@ import {
   TextOrder,
 } from "./styles";
 
-interface DropdownProps {
-  handleOptionSelect: (option: string) => void;
-}
-
 const options = [
   { value: "date", label: "Data de Publicação" },
   { value: "title", label: "Título do Vídeo" },
 ];
-
-interface DropdownProps {
-  handleOptionSelect: (option: string) => void;
-  selectedOption: string; // Adicione a prop "selectedOption"
-}
-
 
 const Dropdown: React.FC<DropdownProps> = ({ handleOptionSelect }) => {
   const [selectedOption, setSelectedOption] = React.useState<string>('');

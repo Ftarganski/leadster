@@ -1,4 +1,7 @@
 import React from "react";
+import { FiDownloadCloud } from "react-icons/fi";
+import { GrClose } from "react-icons/gr";
+import { GridItemModalProps } from "../types/types";
 import {
   Modal,
   ModalContent,
@@ -11,21 +14,6 @@ import {
   ModalButtonContent,
   Icon,
 } from "../ModalVideo/styles";
-
-import { FiDownloadCloud } from "react-icons/fi";
-import { GrClose } from "react-icons/gr";
-
-interface GridItemModalProps {
-  item: {
-    title: string;
-    link: string;
-    description: string;
-    spreadsheet: string;
-    document: string;
-    presentation: string;
-  };
-  closeModal: () => void;
-}
 
 const ModalVideo: React.FC<GridItemModalProps> = ({ item, closeModal }) => {
   return (

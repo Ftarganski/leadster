@@ -4,6 +4,7 @@ import ModalVideo from '../ModalVideo/ModalVideo';
 import Image from 'next/image';
 import Thumb from '../../public/images/thumbnail.png';
 import { FaPlay } from 'react-icons/fa';
+import { Item, GridVideosProps } from '../types/types';
 import {
   Container,
   Grid,
@@ -14,19 +15,6 @@ import {
   CountPages,
   CountPagesButton
 } from "../GridVideos/styles";
-
-interface Item {
-  title: string;
-  link: string;
-  description: string;
-  spreadsheet: string;
-  document: string;
-  presentation: string;
-}
-
-interface GridVideosProps {
-  selectedOption: string;
-}
 
 const GridVideos: React.FC<GridVideosProps> = ({ selectedOption }) => {
   const [selectedItem, setSelectedItem] = React.useState<Item | null>(null);

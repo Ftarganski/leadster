@@ -1,0 +1,42 @@
+{ 
+    "advertise": {
+        "title": "Pronto para triplicar sua<br/>Geração de Leads?",
+        "subtitle" : "Criação e ativação em<span> 4 minutos.",
+        "credit": "Não é necessário cartão de crédito | ",
+        "satisfaction" : " 4.9/5 - Média de Satisfação"
+    },
+
+    "footer": {
+        "logoAlt": "Logo Leadster",
+        "slogan": "Transformando visitantes em clientes.",
+        "mainLinkTitle": "Links Principais",
+        "mainLinkHome" : "Home",
+        "mainLinkTool": "Ferramenta",
+        "mainLinkPricing": "Preços",
+        "mainLinkContact": "Contato",
+
+        "caseLinkTitle" : "Cases",
+        "caseLinkB2B":"Geração de Leads B2B",
+        "caseLinkSoftware":"Geração de Leads em Software",
+        "caseLinkRealState": "Geração de Leads em Imobiliária",
+        "caseLinkSuccess": "Cases de Sucesso",
+
+        "materialsLinkTitle": "Materiais",
+        "materialsLinkBlog": "Blog",
+        "materialsLinkPartner": "Parceria com Agências",
+        "materialsLinkGuide": "Guia Definitivo do Marketing",
+        "materialsLinkFreeMaterial": "Materiais Gratuitos",
+        
+        "contactLinkTitle" : "Siga a Leadster",
+        "contactEmailTitle" : "E-mail: ",
+        "contactEmail" : "contato@leadster.com.br",
+        "contactPhoneTitle" : "Telefone: ",
+        "contactPhone" : "(42) 98828-9851",
+
+        "footerText": "Copyright © 2015 - 2022 Todos os direitos reservados | ",
+        "footerTextLink": "Leadster",
+        
+        "addressText": "Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 | ",
+        "addressTextLink": "Termos de uso"
+    }
+  }

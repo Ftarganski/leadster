@@ -1,5 +1,6 @@
 import Logo from "../../public/images/logo.png";
 import Image from "next/image";
+import { getTexts } from "../../utils/textUtils";
 import {
   Container,
   Title,
@@ -11,97 +12,96 @@ import {
 } from "../Footer/styles";
 
 const Footer = () => {
+  const t = getTexts();
   return (
     <Container>
       <Title>
-        <Image src={Logo} alt="Logo Leadster" width={300} />
+        <Image src={Logo} alt={t.footer.logoAlt} width={300} />
 
-        <TitleSlogan>Transformando visitantes em clientes.</TitleSlogan>
+        <TitleSlogan>{t.footer.slogan}</TitleSlogan>
       </Title>
 
       <Links>
         <BlockLinks>
-          <h5>Links Principais</h5>
+          <h5>{t.footer.mainLinkTitle}</h5>
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/">{t.footer.mainLinkHome}</Link>
             </li>
             <li>
-              <Link href="/">Ferramenta</Link>
+              <Link href="/">{t.footer.mainLinkTool}</Link>
             </li>
             <li>
-              <Link href="/">Preços</Link>
+              <Link href="/">{t.footer.mainLinkPricing}</Link>
             </li>
             <li>
-              <Link href="/">Contato</Link>
+              <Link href="/">{t.footer.mainLinkContact}</Link>
             </li>
           </ul>
         </BlockLinks>
 
         <BlockLinks>
-          <h5>Cases</h5>
+          <h5>{t.footer.caseLinkTitle}</h5>
           <ul>
             <li>
-              <Link href="/">Geração de Leads B2B</Link>
+              <Link href="/">{t.footer.caseLinkB2B}</Link>
             </li>
             <li>
-              <Link href="/">Geração de Leads em Software</Link>
+              <Link href="/">{t.footer.caseLinkSoftware}</Link>
             </li>
             <li>
-              <Link href="/">Geração de Leads em Imobiliária</Link>
+              <Link href="/">{t.footer.caseLinkRealState}</Link>
             </li>
             <li>
-              <Link href="/">Cases de Sucesso</Link>
+              <Link href="/">{t.footer.caseLinkSuccess}</Link>
             </li>
           </ul>
         </BlockLinks>
 
         <BlockLinks>
-          <h5>Materiais</h5>
+          <h5>{t.footer.materialsLinkTitle}</h5>
           <ul>
             <li>
-              <Link href="/">Blog</Link>
+              <Link href="/">{t.footer.materialsLinkBlog}</Link>
             </li>
             <li>
-              <Link href="/">Parceria com Agências</Link>
+              <Link href="/">{t.footer.materialsLinkPartner}</Link>
             </li>
             <li>
-              <Link href="/">Guia Definitivo do Marketing</Link>
+              <Link href="/">{t.footer.materialsLinkGuide}</Link>
             </li>
             <li>
-              <Link href="/">Materiais Gratuitos</Link>
+              <Link href="/">{t.footer.materialsLinkFreeMaterial}</Link>
             </li>
           </ul>
         </BlockLinks>
 
         <BlockLinks>
-          <h5>Siga a Leadster</h5>
+          <h5>{t.footer.contactLinkTitle}</h5>
           <ul>
             <li>
               <Link href="/">ICONS</Link>
             </li>
             <li>
-              E-mail:
+              {t.footer.contactEmailTitle}
               <Link
                 href="mailto:contato@leadster.com.br"
                 title="Email"
                 target="_blank"
                 rel="noreferrer"
               >
-                {" "}
-                contato@leadster.com.br
+                {t.footer.contactEmail}
               </Link>
             </li>
             <li>
-              Telefone:
+              {t.footer.contactPhoneTitle}
               <Link
                 href="tel:+554298828-9851"
                 title="Leadster"
                 target="_blank"
                 rel="noreferrer"
               >
-                {" "}
-                (42) 98828-9851
+                {t.footer.contactPhone}
               </Link>
             </li>
           </ul>
@@ -111,12 +111,12 @@ const Footer = () => {
       <FooterBar>
         <ul>
           <li>
-            Copyright © 2015 - 2022 Todos os direitos reservados |{" "}
-            <Link href="/">Leadster</Link>
+            {t.footer.footerText}
+            <Link href="/"> {t.footer.footerTextLink}</Link>
           </li>
           <li>
-            Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 |{" "}
-            <Link href="/">Termos de uso</Link>
+            {t.footer.addressText}
+            <Link href="/">{t.footer.addressTextLink}</Link>
           </li>
         </ul>
       </FooterBar>

@@ -5,6 +5,7 @@ import ImgRDStation from "../../public/images/selo_RD.png";
 import Card from "../../public/images/no-card-dark.webp";
 import Rating from "../../public/images/rating.webp";
 import { useRouter } from "next/router";
+import { getTexts } from "../../utils/textUtils";
 import {
   Container,
   Chart,
@@ -16,6 +17,7 @@ import {
 } from "../Advertise/styles";
 
 const Advertise = () => {
+  const t = getTexts();
   const router = useRouter();
   const [isHovered, setIsHovered] = useState(false);
 
@@ -39,13 +41,8 @@ const Advertise = () => {
         </Chart>
         <Demo>
           <DemoTop>
-            <h2>
-              Pronto para triplicar sua
-              <br /> Geração de Leads?
-            </h2>
-            <p>
-              Criação e ativação em <span>4 minutos.</span>
-            </p>
+            <h2 dangerouslySetInnerHTML={{ __html: t.advertise.title }}/>
+            <p dangerouslySetInnerHTML={{ __html: t.advertise.subtitle }}/>
           </DemoTop>
 
           <DemoBottom>
@@ -65,11 +62,11 @@ const Advertise = () => {
             <div>
               <Image src={Card} alt="Credit Card" height={15} />
               <span>
-                <p>Não é necessário cartão de crédito | </p>
+                <p>{t.advertise.credit}</p>
               </span>
               <Image src={Rating} alt="Rating" height={15} />
               <span>
-                <p> 4.9/5 - Média de Satisfação</p>
+                <p>{t.advertise.satisfaction}</p>
               </span>
             </div>
           </DemoBottom>
