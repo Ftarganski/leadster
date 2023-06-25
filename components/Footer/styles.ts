@@ -94,6 +94,13 @@ export const Icon = styled.a`
   width: 50px;
   border-radius: 25px;
   background-color: var(--third-color);
+  &:hover{
+    background-color: var(--button-color);
+    border: none;
+    svg {
+      fill: white; 
+    }  
+  }
   svg{
     fill: var(--link-color);
     stroke: var(--link-color);

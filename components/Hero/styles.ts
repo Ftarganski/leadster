@@ -15,6 +15,9 @@ export const Container = styled.div`
     @media (max-width: 576px) {
       padding: 80px 0;     
     }
+    @media (max-width: 460px) {
+      padding: 50px 0;   
+    }
 `;
 
 export const TitleBalloon = styled.h4`
@@ -41,6 +44,9 @@ export const Subtitle = styled.h2`
     @media (max-width: 576px) {
       font-size: 2rem;
     }
+    @media (max-width: 460px) {
+      font-size: 1.9rem;   
+    }
 `;
 
 export const Title = styled.h1`
@@ -55,6 +61,9 @@ export const Title = styled.h1`
     @media (max-width: 576px) {
       font-size: 3.5rem;
     }
+    @media (max-width: 460px) {
+      font-size: 3.1rem;   
+    }
 `;
 
 export const Line = styled.div`
@@ -68,6 +77,9 @@ export const Line = styled.div`
     }
     @media (max-width: 576px) {
       width: 420px;    
+    }
+    @media (max-width: 460px) {
+      width: 380px;    
     }
 `;
 
@@ -90,6 +102,11 @@ export const Content = styled.div`
           margin-right: 88px;
           box-sizing: border-box;
         }
+        @media (max-width: 460px) {
+          margin-top: 0;
+          margin-right: 110px;
+          box-sizing: border-box;
+        }
     }
 `;
 
@@ -104,7 +121,10 @@ export const Slogan = styled.p`
     font-size: 0.85rem; 
     }
     @media (max-width: 576px) {
-    font-size: 0.7rem; 
+      width: 420px;  
+    }
+    @media (max-width: 460px) {
+      width: 380px;  
     }
 `;
 
