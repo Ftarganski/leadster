@@ -16,7 +16,7 @@ A proposta de desenvolvimento focou em 3 fatores principais, com foco no princí
 - Clareza: a escrita do código foi realizada buscando-se a clareza e a legibilidade, evitando abreviações excessivas e utilizando nomes descritivos para funções, variáveis e classes. 
 - Modularidade: o projeto se pautou pela divisão do mesmo em componente e funções menores e bem definidas, cada uma com uma responsabilidade específica, visando a manutenção, teste e reutilização do código.
 
-### Organização do código:
+### Organização do código
 Na organização do código buscou-se seguer os seguintes princípios:
 - Estrutura de diretórios: organização do código em uma estrutura de diretórios lógica e coerente, separando componentes distintos, como módulos, modelos, arquivos de configuração.
 - Modularidade: divisão do código em arquivos e módulos separados, com base em sua funcionalidade ou propósito.
@@ -28,6 +28,9 @@ Para a realização do desafio estabeleci alguns parâmetros a seguir no desenvo
 - A seção `/Main.tsx`, que renderiza o principal contexto do projeto, foi subdividida em `/Dropdown.tsx` para fazer a filtragem dos vídeos e `/GridVideos.tsx` que efetivamente renderiza a sequência de vídeos na página.
 - Do componente `/GridVideos.tsx` deriva `/ModalVideo.tsx` que é responsável pela renderização do modal quando um dos vídeos é selecionado.
 - Foi gerado um arquivo `/videos.json` para consumo de informações pelo `/GridVideos.tsx`. Este é o arquivo de entrada de todas as informações relativas aos vídeos.
+
+### Expansibilidade
+Prevendo a possibilidade de extensão futura do site para novas linguagens (atingir novos mercados) já foi incluído um sistema de consumo de texto via `/texts.json` com a utilização de uma util `/textUtils.ts` com similaridade ao sistema `/i18n`. Desta forma, futuramente, ao se optar por um sistema de tradução do site para outras línguas, já teremos um consumível em JSON funcional, bastando adicionar as traduções desejadas.
 
 ### Organograma Estrutural
 ```mermaid
