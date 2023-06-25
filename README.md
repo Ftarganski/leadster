@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Teste Leadster FrontEnd - Junho 2023
 
 ### Demanda
@@ -12,12 +10,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Documentação de Implantação
 
-## Pré-requisitos
+### Pré-requisitos
 Antes de prosseguir com a implantação, é necessário garantir que o ambiente de desenvolvimento atenda aos seguintes pré-requisitos:
 Node.js (versão 12 ou superior) instalado no servidor de hospedagem
 Gerenciador de pacotes npm (ou yarn) instalado
 
-## Etapas de Implantação
+### Etapas de Implantação
 Siga as etapas abaixo para implantar o código web:
 
 1. Clone o repositório do código web para o servidor de hospedagem.
