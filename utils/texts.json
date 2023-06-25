@@ -1,9 +1,19 @@
 { 
+    "dropdown": {
+    },
+
+
     "advertise": {
         "title": "Pronto para triplicar sua<br/>Geração de Leads?",
         "subtitle" : "Criação e ativação em<span> 4 minutos.",
         "credit": "Não é necessário cartão de crédito | ",
-        "satisfaction" : " 4.9/5 - Média de Satisfação"
+        "satisfaction" : " 4.9/5 - Média de Satisfação",
+        "button" : "VER DEMONSTRAÇÃO",
+        "buttonHover" : "CLIQUE PARA VER",
+        "altChart": "Gráfico comparativo Leadster",
+        "altRDStation" : "Top 10 apps mais usados RD Station",
+        "altCreditCard" : "Icon Cartão de Crédito",
+        "altRating" : "Satisfação de nossos clientes"
     },
 
     "footer": {

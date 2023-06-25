@@ -1,7 +1,7 @@
 import React from "react";
 import Select from "react-select";
-import { MdArrowDropDown } from "react-icons/md";
-import { DropdownProps, Option } from "../types/types";
+import { DropdownProps } from "../types/types";
+import { getTexts } from "../../utils/textUtils";
 import {
   Container,
   ContainerOrder,
@@ -18,6 +18,7 @@ const options = [
 ];
 
 const Dropdown: React.FC<DropdownProps> = ({ handleOptionSelect }) => {
+  const t = getTexts();
   const [selectedOption, setSelectedOption] = React.useState<string>('');
 
   const handleOptionChange = (selected: any) => {

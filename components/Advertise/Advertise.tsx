@@ -37,12 +37,12 @@ const Advertise = () => {
     <>
       <Container>
         <Chart>
-          <Image src={ImgChart} height={600} alt="RD Station" />
+          <Image src={ImgChart} height={600} alt={t.advertise.altChart} />
         </Chart>
         <Demo>
           <DemoTop>
-            <h2 dangerouslySetInnerHTML={{ __html: t.advertise.title }}/>
-            <p dangerouslySetInnerHTML={{ __html: t.advertise.subtitle }}/>
+            <h2 dangerouslySetInnerHTML={{ __html: t.advertise.title }} />
+            <p dangerouslySetInnerHTML={{ __html: t.advertise.subtitle }} />
           </DemoTop>
 
           <DemoBottom>
@@ -52,19 +52,19 @@ const Advertise = () => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                {isHovered ? "CLIQUE PARA VER" : "VER DEMONSTRAÇÃO"}
+                {isHovered ? t.advertise.buttonHover : t.advertise.button}
               </DemoButton>
               <LogoRDStation>
-                <Image src={ImgRDStation} height={70} alt="RD Station" />
+                <Image src={ImgRDStation} height={70} alt={t.advertise.altRDStation} />
               </LogoRDStation>
             </div>
 
             <div>
-              <Image src={Card} alt="Credit Card" height={15} />
+              <Image src={Card} alt={t.advertise.altCreditCard} height={15} />
               <span>
                 <p>{t.advertise.credit}</p>
               </span>
-              <Image src={Rating} alt="Rating" height={15} />
+              <Image src={Rating} alt={t.advertise.altRating} height={15} />
               <span>
                 <p>{t.advertise.satisfaction}</p>
               </span>
