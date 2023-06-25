@@ -1,14 +1,20 @@
-## Teste Leadster FrontEnd - Junho 2023
+# Teste Leadster FrontEnd - Junho 2023
 
-### Demanda
-- Desenvolver um landing page com o framework NextJS;
-- Utilizar um arquivo {JSON} para a listagem de vídeos (e seus detalhes) pasra abrir em um modal;
-- Utilização de padrões de sintaxe e semântica de código (HTML, Javascript e CSS);
-- Atenção à usabilidade da página;
-- Utilizar Styled Components;
-- Prever Layout responsivo
+Bem vindo!
+Esta é a solução encontrada para o desafio de Frontend da empresa [Leadster](https://leadster.com.br/) 
 
-## Desenvolvimento do Projeto
+## 💾  Acesso ao deploy no Vercel
+[Deploy Leadster](https://leadster-alpha.vercel.app/) 
+
+## 📋 Demanda
+- [x] Desenvolver um landing page com o framework NextJS;
+- [x] Utilizar um arquivo {JSON} para a listagem de vídeos (e seus detalhes) pasra abrir em um modal;
+- [x] Utilização de padrões de sintaxe e semântica de código (HTML, Javascript e CSS);
+- [x] Atenção à usabilidade da página;
+- [x] Utilizar Styled Components;
+- [x] Prever Layout responsivo
+
+## ✍️ Desenvolvimento do Projeto
 
 ### Decisões de projeto
 A proposta de desenvolvimento focou em 3 fatores principais, com foco no princípio DRY `Don't Repeat Yourself`
@@ -68,7 +74,10 @@ journey
       25/06: 5
 ```
 
-## Documentação de Implantação
+## ⚙️ Linguagens de programação
+[![My Skills](https://skillicons.dev/icons?i=nextjs,react,html,css,js,ts&theme=light)](https://www.linkedin.com/in/targanski/)
+
+## 🖥️ Documentação de Implantação
 
 ### Pré-requisitos
 Antes de prosseguir com a implantação, é necessário garantir que o ambiente de desenvolvimento atenda aos seguintes pré-requisitos:
@@ -79,20 +88,19 @@ Gerenciador de pacotes npm (ou yarn) instalado
 Siga as etapas abaixo para implantar o código web:
 
 1. Clone o repositório do código web para o servidor de hospedagem.
+```bash
+git clone https://github.com/Ftarganski/leadster.git
+```
 
 2. Navegue até o diretório raiz do projeto clonado.
 
 3. Execute o seguinte comando para instalar as dependências do projeto:
 ```bash
-npm install
-# or
 yarn install
 ```
 
 4. Após a conclusão da instalação das dependências, execute o seguinte comando para iniciar a aplicação:
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 Este comando irá iniciar a aplicação no modo de desenvolvimento.
@@ -100,7 +108,7 @@ Este comando irá iniciar a aplicação no modo de desenvolvimento.
 5. Acesse a aplicação web no navegador utilizando o endereço local: 
 [http://localhost:3000](http://localhost:3000)
 
-## Configurações Adicionais
+## 📄 Configurações Adicionais
 
 ### Metadados
 A página inicial `/index.tsx` e o componente `/HeadSite.tsx` contêm metadados importantes para SEO e exibição nos motores de busca. Certifique-se de atualizar as informações conforme necessário, incluindo o título, descrição, palavras-chave e favicon.
